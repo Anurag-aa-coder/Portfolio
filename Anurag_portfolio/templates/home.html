@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <div class="home-content">
+    <img src="{{ url_for('static', filename='images/profile.jpeg') }}" alt="Profile Picture" class="profile-pic">
+
+    <h2>Welcome to My Personal Portfolio</h2>
+    <p>Hi, I'm <strong>Anurag Topno</strong>, a passionate web developer with a keen interest in building dynamic and user friendly web applications.</p>
+    
+    <div class="about-section">
+      <h3>About Me</h3>
+      <p>
+        I'm currently pursuing my B.Tech at GIET University, Gunupur. I specialize in Python backend development using Flask, and I'm enthusiastic about building full-stack applications with elegant designs and responsive layouts.
+        My interests span across embedded systems, RTOS, and Linux, and I enjoy blending low level system work with high level web technologies.
+      </p>
+    </div>
+
+    <div class="skills-section">
+      <h3>Skills</h3>
+      <ul class="skills-list">
+        <li>Python & Flask</li>
+        <li>HTML, CSS, JavaScript</li>
+        <li>SQL & SQLAlchemy</li>
+        <li>Git & GitHub</li>
+        <li>Linux & Shell Scripting</li>
+        <li>Embedded Systems, RTOS</li>
+      </ul>
+    </div>
+
+    <div class="tech-stack">
+      <h3>Tech Stack</h3>
+      <div class="icons">
+        <img src="{{ url_for('static', filename='images/html.png') }}" alt="HTML">
+        <img src="{{ url_for('static', filename='images/css.png') }}" alt="CSS">
+        <img src="{{ url_for('static', filename='images/js.png') }}" alt="JavaScript">
+        <img src="{{ url_for('static', filename='images/python.png') }}" alt="Python">
+        <img src="{{ url_for('static', filename='images/flask.png') }}" alt="Flask">
+        <img src="{{ url_for('static', filename='images/github.png') }}" alt="GitHub">
+      </div>
+    </div>
+
+    <div class="cta">
+      <a href="{{ url_for('projects') }}" class="btn">View My Projects</a>
+      <a href="{{ url_for('contact') }}" class="btn secondary">Contact Me</a>
+    </div>
+  </div>
+{% endblock %}

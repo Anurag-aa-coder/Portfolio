@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <div class="about-page">
+    <h2>About Me</h2>
+    <p class="intro">
+      I am a passionate developer with handson experience in building realworld software systems, both at the system level (Embedded & RTOS) and full-stack web applications using Python & Flask.
+    </p>
+
+    <div class="education-section">
+        <h3>🎓 Education</h3>
+      
+        <div class="education-item">
+          <h4>Gandhi Institute of Engineering and Technology (GIET), Gunupur</h4>
+          <p>B.Tech in Computer Science — <em>Currently Pursuing</em></p>
+        </div>
+      
+        <div class="education-item">
+          <h4>Delhi Public School, Sambalpur</h4>
+          <p>Class 12 (CBSE Board) — <em>Completed</em></p>
+        </div>
+      
+        <div class="education-item">
+          <h4>St. Arnold’s School, Rourkela</h4>
+          <p>Class 10 (ICSE Board) — <em>Completed</em></p>
+        </div>
+      </div>
+      
+
+    <div class="achievements-section">
+      <h3>🏆 Achievements</h3>
+      <ul class="achievements-list">
+        <li>✅ Completed multiple software development projects</li>
+        <li>✅ Contributed to open-source communities and GitHub repositories</li>
+        <li>✅ Participated in university hackathons and tech competitions</li>
+        <li>✅ Developed a personal portfolio website using Flask</li>
+      </ul>
+    </div>
+
+    <div class="resume-download">
+      <a href="{{ url_for('static', filename='resume.pdf') }}" target="_blank" class="btn">
+        📄 View Resume (PDF)
+      </a>
+    </div>
+  </div>
+{% endblock %}
